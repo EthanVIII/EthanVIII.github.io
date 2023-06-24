@@ -88,7 +88,7 @@ html {
   color: #000000;
 }
 
-img[src="/Prof_Pic.jpg"] {
+img[src="/public/Prof_Pic.jpg"] {
   display: inline;
   border-radius: 50%;
   width: 35%;
