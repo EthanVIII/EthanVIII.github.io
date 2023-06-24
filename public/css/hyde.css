@@ -58,14 +58,15 @@ body {
  */
 
 .sidebar {
-  text-align: left;
-  padding: 4.5rem 1rem;
+  text-align: center;
+  padding: 1rem 0rem;
   color: #000000;
 }
 
 @media (min-width: 48em) {
   .sidebar {
     position: absolute;
+    padding: 4.5rem 1rem;
     top: 0;
     left: 0;
     bottom: 0;
@@ -75,6 +76,7 @@ body {
   }
   .sidebar-about h1 {
     position: absolute;
+    padding: 4.5rem 1rem;
     top: 0;
     left: 0;
     bottom: 0;
@@ -92,7 +94,7 @@ body {
 /* About section */
 .sidebar-about h1 {
   text-align: left;
-  padding: 4.5rem 1rem;
+  padding: 1rem 0rem;
   color: #000000;
 }
 
