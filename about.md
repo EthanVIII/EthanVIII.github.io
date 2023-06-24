@@ -2,29 +2,10 @@
 layout: page
 title: About
 ---
+I am an economics & data analytics student and a data analyst. I am interested in design, data visualisation, flocking simulations, and software development. This is a portfolio to document interesting personal projects.
 
-<p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
+## Building the Website
+This website was built in [Jekyll](http://jekyllrb.com) version of and a heavily modified [Hyde](http://hyde.getpoole.com) theme. It made by [@mdo](https://twitter.com/mdo). The forked repository is on [GitHub](https://github.com/EthanVIII/EthanVIII.github.io).
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+Learn more and contribute to Jekyll on [GitHub](https://github.com/poole).
 
-There are currently two themes built on Poole:
-
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
-
-Learn more and contribute on [GitHub](https://github.com/poole).
-
-## Setup
-
-Some fun facts about the setup of this project include:
-
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
-
-Thanks for reading!
