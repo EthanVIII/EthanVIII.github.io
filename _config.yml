@@ -1,6 +1,6 @@
 # Dependencies
-markdown:         redcarpet
-highlighter:      pygments
+markdown:         kramdown
+highlighter:      rouge
 
 # Permalinks
 permalink:        pretty
@@ -24,3 +24,11 @@ version:          2.1.0
 
 github:
   repo:           https://github.com/poole/hyde
+
+# Gems
+gem: [jekyll-paginate, jekyll-gists,redcarpet]
+
+plugins:
+  - jekyll-paginate
+  - jekyll-gist
+  - redcarpet
