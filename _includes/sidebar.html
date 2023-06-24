@@ -5,15 +5,15 @@
         <img src="/Prof_Pic.jpg" align="center" />
       </div>
       <div style="font-weight: 700">
-        <a href="{{ site.url }}{{ site.baseurl }}"> {{ site.title }} </a>
+        <a href="{{ site.baseurl }}"> {{ site.title }} </a>
       </div>
       <p class="lead">{{ site.description }}</p>
     </div>
 
     <nav class="sidebar-nav">
       <a
-        class="sidebar-nav-item{% if page.url == {{ site.url }}{{ site.baseurl }} %} active{% endif %}"
-        href="{{ site.url }}{{ site.baseurl }}"
+        class="sidebar-nav-item{% if page.url == {{ site.baseurl }} %} active{% endif %}"
+        href="{{ site.baseurl }}"
         >Home
         </a>
 

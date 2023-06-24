@@ -10,7 +10,7 @@ permalink:        pretty
 title:            'Ethan L'
 description:      'Economics and data analytics student. Data analyst. Interested in software development, design, data visualisation.'
 url:              https://ethanviii.github.io
-baseurl:          '/'
+baseurl:          ''
 author:
   name:           'Ethan L'
 
