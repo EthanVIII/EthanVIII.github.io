@@ -73,6 +73,15 @@ body {
     text-align: left;
     margin-left: calc(50% - 35rem);
   }
+  .sidebar-about h1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 18rem;
+    text-align: left;
+    margin-left: calc(50% - 35rem);
+  }
 }
 
 /* Sidebar links */
@@ -82,10 +91,9 @@ body {
 
 /* About section */
 .sidebar-about h1 {
+  text-align: left;
+  padding: 4.5rem 1rem;
   color: #000000;
-  margin-top: 2rem;
-  font-family: "Inter", Arial, Helvetica, sans-serif;
-  font-size: 2rem;
 }
 
 img[src="/Prof_Pic.jpg"] {
