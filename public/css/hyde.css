@@ -48,12 +48,33 @@ html {
  */
 
 .sidebar {
-  text-align: left;
+  text-align: center;
   padding: 1rem 0rem;
   color: #000000;
 }
 
-
+@media (min-width: 48em) {
+  .sidebar {
+    position: absolute;
+    padding: 4.5rem 1rem;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 18rem;
+    text-align: left;
+    margin-left: calc(50% - 35rem);
+  }
+  .sidebar-about h1 {
+    position: absolute;
+    padding: 4.5rem 1rem;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 18rem;
+    text-align: left;
+    margin-left: calc(50% - 35rem);
+  }
+}
 
 /* Sidebar links */
 .sidebar a {
@@ -70,7 +91,7 @@ html {
 img[src="/public/Prof_Pic.jpg"] {
   display: inline;
   border-radius: 50%;
-  width: 5em;
+  width: 35%;
   height: auto;
   margin-bottom: 1rem;
 }
@@ -117,8 +138,10 @@ a.sidebar-nav-item:focus {
  * with a 25%-wide `.sidebar`.
  */
 
-
-
+.content {
+  padding-top:    4rem;
+  padding-bottom: 4rem;
+}
 
 @media (min-width: 48em) {
   .content {
@@ -126,24 +149,7 @@ a.sidebar-nav-item:focus {
     margin-left: 20rem;
     margin-right: 2rem;
   }
-  .container {
-    display: flex;
-    justify-content: center;
-    padding-top:    4rem;
-    padding-bottom: 4rem;
-    flex-direction: row;
-  }
-  .sidebar {
-    flex: 0 0 auto;
-    order: 1;
-  }
-  .content {
-    order:2;
-    flex: 1 0 auto;
-  }
 }
-
-
 
 @media {
   .content {
