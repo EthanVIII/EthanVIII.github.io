@@ -40,11 +40,11 @@ I_{2^{n-1}} & A_n
 
 Where $I_{2^{n-1}}$ is an identity matrix with side length $2^{n-1}$. for $n=1$ to $n=4$, this algorithm yields these adjacency matrices.
 
-![Adjacency Matrices from n=1 to n=4](/assets/hypercube_matrix.png){: height="170" }
+![Adjacency Matrices from n=1 to n=4](/assets/hypercube_matrix.png)
 
 We then get the following graphs from the adjacency matrices.
 
-![graphs from n=1 to n=4](/assets/graph_shapes.png){: height="170" }
+![graphs from n=1 to n=4](/assets/graph_shapes.png)
 
 ## The animation
 With this, I used `manim` to render this short animation, using matching colours between the adjacency matrix cells and the edges generated to illustrate the relationship betwen the two. 
