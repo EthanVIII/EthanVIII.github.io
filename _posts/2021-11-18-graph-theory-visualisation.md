@@ -5,7 +5,7 @@ description: I watched a talk that included the neat recursive algorithm to cons
 ---
 **Note:** This was written in November 2021 on a different blog and has since been updated.
 
-Recently, I wanted to try making prettier mathematical animations. Through [3Blue1Brown](https://www.youtube.com/c/3blue1brown) I found the Python animation engine `manim`. As I am already familiar with Python, I decided to give it a shot. `manim` is a programmatic animation engine with support for mathematics-specific animation. For my first go, I wanted to choose a topic that was visually interesting that would benefit from visualisation.
+Recently, I wanted to try making prettier mathematical animations. Through [3Blue1Brown](https://www.youtube.com/c/3blue1brown) I found the Python animation engine `manim`. As I am already familiar with Python, I decided to give it a shot. `manim` is a programmatic animation engine with support for mathematics-specific animation. For my first go, I wanted to animate something that was visually interesting and that would benefit from visualisation.
 
 I watched a [talk](https://www.youtube.com/watch?v=GDNkDMOxC-I) by the late Gilles Castel, Eline Degryse, and Pieterjan Thijs that briefly described the tidy recursive algorithm for describing hypercubes in graphs which seemed to fit my criteria. (Note that hypercube graphs have diverse applications in graph theory and computer science, such as in proving sensitivity conjecture which this talk discusses.)
 
