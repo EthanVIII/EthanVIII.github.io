@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Visualising hypercube graphs through animation
-description: I watched a talk that described the neat recursive algorithm to construct hypercube graphs using adjacency matrices. I'll explain how I made a quick visualisation of this algorithm. 
+description: I watched a talk that included the neat recursive algorithm to construct hypercube graphs using adjacency matrices. I'll explain how I made a quick visualisation of this algorithm. 
 ---
 **Note:** This was written in November 2021 on a different blog and has since been updated.
 
@@ -50,4 +50,3 @@ We then get the following graphs from the adjacency matrices.
 With this, I used `manim` to render this short animation, using matching colours between the adjacency matrix cells and the edges generated to illustrate the relationship betwen the two. 
 
 Because this short animation only went to $n=4$, I simply hardcoded the bulk of the animation. This was tedious and made the code difficult to work with. If I had the chance to redo this project or extend it to higher dimensional cases, it would be easier overall to abstract the generation of the adjacency matrix and graph visualisation to functions.
-
