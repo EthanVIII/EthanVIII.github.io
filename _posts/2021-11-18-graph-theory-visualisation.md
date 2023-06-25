@@ -7,7 +7,9 @@ description: I watched a talk that described the neat recursive algorithm to con
 
 Recently, I wanted to try making prettier mathematical animations. Through [3Blue1Brown](https://www.youtube.com/c/3blue1brown) I found the Python animation engine `manim`. As I am already familiar with Python, I decided to give it a shot. `manim` is a programmatic animation engine with support for mathematics-specific animation. For my first go, I wanted to choose a topic that was visually interesting that would benefit from visualisation.
 
-I watched a [talk](https://www.youtube.com/watch?v=GDNkDMOxC-I) by the late Gilles Castel, Eline Degryse, and Pieterjan Thijs that briefly described the tidy recursive algorithm for describing hypercubes in graphs which seemed to fit my criteria. Taking some cues from the existing presentation, I made this short clip that animates the full algorithm with added colour.
+I watched a [talk](https://www.youtube.com/watch?v=GDNkDMOxC-I) by the late Gilles Castel, Eline Degryse, and Pieterjan Thijs that briefly described the tidy recursive algorithm for describing hypercubes in graphs which seemed to fit my criteria. (Note that hypercube graphs have diverse applications in graph theory and computer science, such as in proving sensitivity conjecture which this talk discusses.)
+
+Taking some cues from the presentation, I made this short clip that animates the full algorithm with added colour.
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/4Qt7UC-Bds0?vq=hd1080&showinfo=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; modestbranding" allowfullscreen></iframe>
 
@@ -45,7 +47,7 @@ We then get the following graphs from the adjacency matrices.
 ![graphs from n=1 to n=4](/assets/graph_shapes.png){: height="170" }
 
 ## The animation
-With this, I used `manim` to render this short animation, using matching colours between the adjacency matrix cells and the edges generated to better show the relationship betwen the two. 
+With this, I used `manim` to render this short animation, using matching colours between the adjacency matrix cells and the edges generated to illustrate the relationship betwen the two. 
 
 Because this short animation only went to $n=4$, I simply hardcoded the bulk of the animation. This was tedious and made the code difficult to work with. If I had the chance to redo this project or extend it to higher dimensional cases, it would be easier overall to abstract the generation of the adjacency matrix and graph visualisation to functions.
 
