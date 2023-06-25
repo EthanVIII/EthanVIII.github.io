@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Visualising hypercube graphs through animation
-description: I watched a talk that described a neat recursive algorithm that constructs graph hypercubes using adjacency matrices. I'll explain how I made a quick visualisation of this algorithm. 
+description: I watched a talk that described a neat recursive algorithm that constructs hypercube graphs using adjacency matrices. I'll explain how I made a quick visualisation of this algorithm. 
 ---
 **Note:** This was written in November 2021 on a different blog and has since been updated.
 
