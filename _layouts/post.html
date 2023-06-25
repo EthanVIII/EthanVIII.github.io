@@ -8,24 +8,8 @@ layout: post_layout
   </span>
 </p>
 
-
 <div class="post">
   <h1 class="post-title"><center>{{ page.title }}</center></h1>
+  <br style="line-height: 5px" />
   {{ content }}
-</div>
-
-<div class="related">
-  <h2>Related Posts</h2>
-  <ul class="related-posts">
-    {% for post in site.related_posts limit:3 %}
-      <li>
-        <h3>
-          <a href="{{ post.url }}">
-            {{ post.title }}
-            <small>{{ post.date | date_to_string }}</small>
-          </a>
-        </h3>
-      </li>
-    {% endfor %}
-  </ul>
 </div>

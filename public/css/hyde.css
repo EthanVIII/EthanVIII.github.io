@@ -132,6 +132,12 @@ a.sidebar-nav-item:focus {
   text-rendering: optimizelegibility;
 }
 
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Container
  *
  * Align the contents of the site above the proper threshold with some margin-fu

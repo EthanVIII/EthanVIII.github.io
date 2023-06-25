@@ -156,7 +156,7 @@ pre {
 code {
   padding: .25em .5em;
   font-size: 85%;
-  color: #bf616a;
+  color: #412023;
   background-color: #f9f9f9;
   border-radius: 3px;
 }
@@ -348,8 +348,8 @@ tbody tr:nth-child(odd) th {
 /* Meta data line below post title */
 .post-date {
   display: block;
-  margin-top: -.5rem;
-  margin-bottom: 1rem;
+  margin-top: -0.4rem;
+  margin-bottom: 0.5rem;
   font-weight: 700;
   color: #000000;
 }
