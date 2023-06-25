@@ -34,7 +34,7 @@
 html {
   font-family: "Inter", Helvetica, Arial, sans-serif;
 }
-@media (min-width: 48em) {
+@media (min-width: 1080px) {
   html {
     font-size: 16px;
   }
@@ -48,12 +48,12 @@ html {
  */
 
 .sidebar {
-  text-align: center;
+  text-align: left;
   padding: 1rem 0rem;
   color: #000000;
 }
 
-@media (min-width: 48em) {
+@media (min-width: 1080px) {
   .sidebar {
     position: absolute;
     padding: 4.5rem 1rem;
@@ -91,7 +91,7 @@ html {
 img[src="/public/Prof_Pic.jpg"] {
   display: inline;
   border-radius: 50%;
-  width: 35%;
+  width: 5em;
   height: auto;
   margin-bottom: 1rem;
 }
@@ -143,7 +143,7 @@ a.sidebar-nav-item:focus {
   padding-bottom: 4rem;
 }
 
-@media (min-width: 48em) {
+@media (min-width: 1080px) {
   .content {
     max-width: 38rem;
     margin-left: 20rem;
@@ -151,12 +151,11 @@ a.sidebar-nav-item:focus {
   }
 }
 
-@media {
+
   .content {
     margin-left: auto;
     margin-right: auto;
   }
-}
 
 
 /*
