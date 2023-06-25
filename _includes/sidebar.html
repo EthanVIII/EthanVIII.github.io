@@ -12,8 +12,7 @@
 
     <nav class="sidebar-nav">
       <a
-        class="sidebar-nav-item{% if page.url == {{ site.baseurl }} %} active{% endif %}"
-        href="{{ site.url }}"
+        class="sidebar-nav-item" href="{{ site.url }} {% if page.url == {{ site.baseurl }} %} active{% endif %}"
         >Articles
         </a>
 
@@ -27,8 +26,6 @@
         >{{ node.title }}</a
       >
       {% endif %} {% endif %} {% endfor %}
-
-      <a class="sidebar-nav-item" href="{{site.url}}"> Download </a>
       <a class="sidebar-nav-item" href="{{ site.github }}"> Github </a>
     </nav>
 
