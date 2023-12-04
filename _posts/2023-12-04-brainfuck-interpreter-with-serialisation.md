@@ -6,9 +6,9 @@ description: brainfuck is a Turing-complete esolang originally designed to have 
 
 Invented in 1993 by Urban Müller, brainfuck is a language design to have a very very small compiler. In fact, his compiler was 240 bytes.                        
 
-As I am learning Rust, I thought that writing a compiler for brainfuck would be a great starting challenge. Even without trying my hand at code gold, my final compiler fit in a single file quite neatly and was just under 200 lines (including comments and spacing). The main resource I used for this project is the ![Esolang wiki page](https://esolangs.org/wiki/Brainfuck).
+As I am learning Rust, I thought that writing a compiler for brainfuck would be a great starting challenge. Even without trying my hand at code gold, my final compiler fit in a single file quite neatly and was just under 200 lines (including comments and spacing). The main resource I used for this project is the [Esolang wiki page](https://esolangs.org/wiki/Brainfuck).
 
-# Environment and syntax
+## Environment and syntax
 
 Brainfuck involves manipulating the values of one big array. Traditionally, this array was 30,000 cells long. However, modern day implementations seem to vary in array length and cell capacities (we'll address this later).
 
@@ -34,10 +34,10 @@ Notably, the only control flow present in this language are square brackets, whi
 
 With this set of instructions and an infinite length tape, brainfuck is a Turing-complete language. I think this is quite neat. Armed with this information, I designed a simple interpreter in Rust.
 
-# Implementation
+## Implementation
 I first setup the interpreter to take in a single argument - the brainfuck source code file name. 
 
-## IO and argument handling in Rust
+### IO and argument handling in Rust
 This was before the days I found out about `clap`, the excellent rust crate designed to manage arguments for CLI tools. I will be using it for future projects (it even generates help menus literate programming style), and it has helped me avoid silly-looking code from this project like this:
 
 ``` rust
@@ -57,7 +57,7 @@ commands.retain(|c| BRAINFUCK_CHARS.contains(&c));
 
 Going with tradition, I set the memory tape size to be 30,000 cells in a mutable vector, and iterated through and executed the instructions. However, the positions of the control flow instructions (i.e. the square brackets) can be precomputed for clarity. 
 
-## Matching brackets and stacks
+### Matching brackets and stacks
 I used a stack algorithm to compute the matching brackets, returning a vector of `Option<usize>`. For each '\[', its index is push onto the stack, and a '\]' means that the latest index was popped off the stack, and represented the index of the matching bracket. This return a vector of `Option<usize>`, which contained `None` if the instruction in that position is not a square bracket, and `Some(position)` with `position` indicating the matching square bracket index. 
 
 Of course, this necessitates that a vector of the same size as the number of instructions are created, which is inefficient. A tidier solution would be to return this same list without any of the `None` entries. When checking for square brackets, the code simply has to keep track of the current count of brackets seen. This count will yield the index in the matching bracket list.
@@ -96,7 +96,7 @@ fn loop_closures(commands: &Vec<char>) -> Vec<Option<usize>> {
 }
 ```
 
-## Interpretation and ASCII
+### Interpretation and ASCII
 Interpretation was simply done by pattern matching for the right characters and executing the commands. This either involved changing the pointer, the array, or to do IO. 
 
 For the sake of IO, I chose for the array to contain `u8` characters, or $2^8-1=255$ values. This can be easily cast to and from ASCII characters, and I was able to easily implement input:
@@ -113,7 +113,7 @@ and output.
 // Print current cell value as ASCII char.
  print!("{}", memory[pointer] as char);
 ```
-# Adding serialisation
+## Adding serialisation
 Soo, that was basically it. All the instructions and the environment needed to interpret brainfuck source code is there. 
 
 However, I wanted to add a little extension to this project, 
@@ -122,7 +122,7 @@ and was also not entirely satisfied with the measly 30,000 cells in the memory a
 To implement this, I checked when the pointer is moved beyond the bounds of the current memory block. This would be the pointer going past `usize::MAX` or going under $0$. If this happens, the current memory block is serialised and stored with its identifier. The memory blocks are tracked using a `u128`, and the memory correct memory block is deserialised into memory or created where needed.
 
 This creates a continuous memory tape which length is `u128::MAX` * 30,000 (very large), successfully increasing the effective length.
-# Reflection and extension
+## Reflection and extension
 This implementation is by no means perfect, and is likely a naive approach to writing an interpreter. However, this was still an extremely useful project where I learnt many text parsing skills and serialisation in Rust.
 
 One performance bottleneck would be if the pointer is consistently moving between the boundary of two memory blocks. This would mean a lot of IO activity and serialisation, which is expensive. To overcome this, keeping three memory blocks in memory would remove this potential performance issue.
