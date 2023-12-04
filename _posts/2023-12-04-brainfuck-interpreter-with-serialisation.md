@@ -16,7 +16,7 @@ To manipulate these array values, brainfuck instructions use a pointer initialis
 
 In fact, there are only 8 valid brainfuck instructions, all one character long. All other characters in the source code are ignored as comments. The following is a table describing them.
 
-|   |   |
+
 |---|---|
 |Instruction|Description|
 |>|Move the pointer right|
