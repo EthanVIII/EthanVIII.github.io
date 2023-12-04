@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A brainfuck interpreter with serialised memory
+title: Writing a brainfuck interpreter with serialised memory
 description: brainfuck is a Turing-complete esolang originally designed to have the smallest possible compiler. This is one of my first stepping stones as I look to writing a compiler for my own language.
 ---
 
